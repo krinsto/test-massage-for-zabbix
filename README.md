@@ -4,13 +4,13 @@
 ### Это тестовый узел сети Zabbix для проверки оповещений. Простой способ протестировать систему уведомлений.
 
 
-Импортируйте узел сети.
+1.Импортируйте узел сети "Zabbix-test-massage.yaml".
 
 
-Назначьте ему группу узлов, на которую настроены оповещения.
+2.Назначьте ему группу узлов, на которую настроены оповещения.
 
 
-В командной строке выполните:
+3.В командной строке выполните:
 
 ```
 zabbix_sender -z 127.0.0.1 -s "TEST" -k test.alert -o 1
@@ -32,13 +32,13 @@ zabbix_sender -z 127.0.0.1 -s "TEST" -k test.alert -o 1
 ### This is a Zabbix test host used to verify alert notifications. It is a simple way to test the notification system.
 
 
-Import the host.
+1.Import the host "Zabbix-test-massage.yaml".
 
 
-Assign it to the host group where alerts are configured.
+2.Assign it to the host group where alerts are configured.
 
 
-Run the following command in the terminal:
+3.Run the following command in the terminal:
 
 ```
 zabbix_sender -z 127.0.0.1 -s "TEST" -k test.alert -o 1
