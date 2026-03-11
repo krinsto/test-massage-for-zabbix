@@ -1,6 +1,6 @@
 # RU
 
-Это тестовый узел сети Zabbix для проверки оповещений. Простой способ протестировать систему уведомлений.
+###Это тестовый узел сети Zabbix для проверки оповещений. Простой способ протестировать систему уведомлений.
 
 Импортируйте узел сети.
 
@@ -17,11 +17,11 @@ zabbix_sender -z 127.0.0.1 -s "TEST" -k test.alert -o 1
 
 После выполнения команда создаст проблему на указанном узле.
 
-ВАЖНО: оповещения должны быть уже правильно настроены, иначе уведомления отправляться не будут.
+##ВАЖНО: оповещения должны быть уже правильно настроены, иначе уведомления отправляться не будут.
 
 # ENG
 
-This is a Zabbix test host used to verify alert notifications. It is a simple way to test the notification system.
+###This is a Zabbix test host used to verify alert notifications. It is a simple way to test the notification system.
 
 Import the host.
 
@@ -36,4 +36,4 @@ zabbix_sender -z 127.0.0.1 -s "TEST" -k test.alert -o 1
 
 After running the command, a problem will appear on the specified host.
 
-IMPORTENT: alerts must already be configured correctly, otherwise notifications will not be sent.
+##IMPORTENT: alerts must already be configured correctly, otherwise notifications will not be sent.
