@@ -1,4 +1,4 @@
-RU
+# RU
 
 Это тестовый узел сети Zabbix для проверки оповещений. Простой способ протестировать систему уведомлений.
 
@@ -19,7 +19,7 @@ zabbix_sender -z 127.0.0.1 -s "TEST" -k test.alert -o 1
 
 ВАЖНО: оповещения должны быть уже правильно настроены, иначе уведомления отправляться не будут.
 
-ENG
+# ENG
 
 This is a Zabbix test host used to verify alert notifications. It is a simple way to test the notification system.
 
