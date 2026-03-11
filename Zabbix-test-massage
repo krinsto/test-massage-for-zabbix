@@ -1,0 +1,30 @@
+zabbix_export:
+  version: '7.4'
+  host_groups:
+    - uuid: 2c129769852c4c1b879bbad47dcf97cf
+      name: Test
+  hosts:
+    - host: TEST
+      name: TEST
+      description: |
+        To reproduce the problem, type in the terminal.
+        
+        Для вызова проблемы написать в терминале 
+        
+        zabbix_sender -z 127.0.0.1 -s "TEST" -k test.alert -o 1
+        
+        To solve the problem, change 1 to 0.
+        
+        Для решения проблемы изменить 1 на 0
+        
+        zabbix_sender -z 127.0.0.1 -s "TEST" -k test.alert -o 0
+      groups:
+        - name: Test
+      items:
+        - name: 'Test alert'
+          type: TRAP
+          key: test.alert
+          triggers:
+            - expression: last(/TEST/test.alert)=1
+              name: 'Test alert trigger'
+              priority: AVERAGE
